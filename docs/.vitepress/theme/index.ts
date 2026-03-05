@@ -345,62 +345,62 @@ export default {
   },
   
   // 1. 布局扩展：注入 Giscus 评论
-  Layout: () => {
-    const route = useRoute()
-    const { frontmatter, isDark } = useData();
-    
-    return h(DefaultTheme.Layout, null, {
-      'layout-top': () => {
-        return h('div', {
-          class: 'info-banner',
-          style: {
-            background: '#e6a23c',
-            color: '#fff',
-            padding: '8px',
-            textAlign: 'center',
-            fontSize: '14px',
-            lineHeight: '1.5'
-          }
-        }, '⚠️ Alpha内测版本警告：此为早期内部构建版本，尚不完整且可能存在错误，欢迎大家提Issue反馈问题或建议')
-      },
-      'doc-after': () => {
-        const children: VNode[] = [
-          h('div', { class: 'feedback-tip' }, [
-            h('strong', null, '反馈与建议：'),
-            '发现内容有误或想补充？欢迎在下方评论区留言，或到 ',
-            h(
-              'a',
-              {
-                href: 'https://github.com/datawhalechina/vibe-vibe/issues',
-                target: '_blank',
-                rel: 'noopener noreferrer'
-              },
-              'GitHub 提 Issue'
-            ),
-            ,
-            h('div', { class: 'feedback-actions' }, [
-              h('span', { class: 'github-star-text' }, '点我给个 Star 吧：'),
-              h('span', { class: 'github-star-wrap' }, [
-                h('iframe', {
-                  class: 'github-star-btn',
-                  src: 'https://ghbtns.com/github-btn.html?user=datawhalechina&repo=vibe-vibe&type=star&count=false&size=large',
-                  title: 'GitHub',
-                  height: '30',
-                  width: '120',
-                  scrolling: '0',
-                  frameborder: '0'
-                })
-              ]),
-              h(PwaInstallButton)
-            ])
-          ])
-        ];
+  Layout: defineComponent({
+    setup() {
+      const route = useRoute()
+      const { frontmatter, isDark } = useData()
 
-        if (frontmatter.value.comment !== false) {
-          children.push(
-            h('div', { style: { marginTop: '2rem' } }, [
+      return () => h(DefaultTheme.Layout, null, {
+        'layout-top': () => {
+          return h('div', {
+            class: 'info-banner',
+            style: {
+              background: '#e6a23c',
+              color: '#fff',
+              padding: '8px',
+              textAlign: 'center',
+              fontSize: '14px',
+              lineHeight: '1.5'
+            }
+          }, '⚠️ Alpha内测版本警告：此为早期内部构建版本，尚不完整且可能存在错误，欢迎大家提Issue反馈问题或建议')
+        },
+        'doc-after': () => {
+          const children: VNode[] = [
+            h('div', { class: 'feedback-tip' }, [
+              h('strong', null, '反馈与建议：'),
+              '发现内容有误或想补充？欢迎在下方评论区留言，或到 ',
+              h(
+                'a',
+                {
+                  href: 'https://github.com/datawhalechina/vibe-vibe/issues',
+                  target: '_blank',
+                  rel: 'noopener noreferrer'
+                },
+                'GitHub 提 Issue'
+              ),
+              ,
+              h('div', { class: 'feedback-actions' }, [
+                h('span', { class: 'github-star-text' }, '点我给个 Star 吧：'),
+                h('span', { class: 'github-star-wrap' }, [
+                  h('iframe', {
+                    class: 'github-star-btn',
+                    src: 'https://ghbtns.com/github-btn.html?user=datawhalechina&repo=vibe-vibe&type=star&count=false&size=large',
+                    title: 'GitHub',
+                    height: '30',
+                    width: '120',
+                    scrolling: '0',
+                    frameborder: '0'
+                  })
+                ]),
+                h(PwaInstallButton)
+              ])
+            ])
+          ];
+
+          if (frontmatter.value.comment !== false) {
+            children.push(
               h(Giscus, {
-                key: `${route.path}::${isDark.value ? 'dark' : 'light'}`,
+                key: route.path,
                 repo: "datawhalechina/vibe-vibe",
                 repoId: "R_kgDOQerM_g",
                 category: "General",
@@ -414,14 +414,14 @@ export default {
                 lang: "zh-CN",
                 loading: "lazy"
               })
-            ])
-          );
-        }
+            );
+          }
 
-        return h('div', null, children)
-      }
-    })
-  },
+          return h('div', null, children)
+        }
+      })
+    }
+  }),
 
   // 2. 增强功能：图片放大
   setup() {
