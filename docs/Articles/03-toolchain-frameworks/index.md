@@ -48,4 +48,20 @@ description: "评测、介绍和指导使用当前生态中的各类构建工具
 
 ---
 
+### [Claude Skills 完整构建指南](./complete-guide-to-building-skills-for-claude.md)
+
+**来源：** Anthropic 官方文档
+**核心观点：** 从基础到高级，全面介绍如何为 Claude 构建自定义 Skills
+
+**你将学到：**
+- Skill 的核心设计原则（渐进式披露、可组合性、可移植性）
+- 如何规划和设计有效的 Skills
+- YAML frontmatter 的编写规范和最佳实践
+- 5 种常见的 Skill 设计模式
+- 测试、迭代和分发 Skills 的完整流程
+- MCP + Skills 的协同工作方式
+- 常见问题的故障排除方法
+
+---
+
 **返回：** [优质文章篇](../)
