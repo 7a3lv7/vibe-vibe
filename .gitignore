@@ -52,3 +52,6 @@ archive/
 # 环境配置
 .env
 .claude/
+
+CLAUDE.md
+AGENTS.md
