@@ -133,6 +133,7 @@ import PriorityMatrix from './components/16-2-PriorityMatrix.vue'
 import RICECalculator from './components/16-2-RICECalculator.vue'
 import HypothesisValidationCycle from './components/16-3-HypothesisValidationCycle.vue'
 import InterviewQuestions from './components/16-3-InterviewQuestions.vue'
+import BasicEditionUpdateBox from './components/BasicEditionUpdateBox.vue'
 
 // 引入时间线样式
 import "vitepress-markdown-timeline/dist/theme/index.css";
@@ -342,6 +343,7 @@ export default {
     app.component('RICECalculator', RICECalculator)
     app.component('HypothesisValidationCycle', HypothesisValidationCycle)
     app.component('InterviewQuestions', InterviewQuestions)
+    app.component('BasicEditionUpdateBox', BasicEditionUpdateBox)
   },
   
   // 1. 布局扩展：注入 Giscus 评论
