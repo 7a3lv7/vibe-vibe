@@ -18,11 +18,7 @@ tags: [MCP, AI集成, 模型上下文协议, 开发工具, AI代理]
 
 想象一下，你有一个适配所有设备的通用**插头** —— 这本质上就是 **模型上下文协议（MCP）** 对于 AI 的意义。MCP 是一个**[开放标准](https://www.anthropic.com/news/model-context-protocol)**（可以理解为"**AI 集成的 USB-C**"），它允许 AI 模型以一致的方式连接到许多不同的应用程序和数据源。简单来说，MCP 让 AI 助手使用通用语言与各种软件工具对话，而不是每个工具都需要不同的适配器或自定义代码。
 
-[
-
 ![](/images/articles/localized/02-technical-architecture/mcp-what-it-is-and-why-it-matters/01.jpg)
-
-](https://substackcdn.com/image/fetch/$s_!XrnD!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8dcc7dee-68d4-48cd-986c-190f40d16d5a_1536x1024.png)
 
 那么，这在实践中意味着什么？如果你正在使用像 Cursor 或 Windsurf 这样的 AI 编码助手，MCP 就是让该助手代表你使用外部工具的**共享协议**。例如，通过 MCP，AI 模型可以**从数据库获取信息、在 Figma 中编辑设计或控制音乐应用** —— 所有这些都通过标准化接口发送自然语言指令来完成。你（或 AI）不再需要手动切换上下文或学习每个工具的 API；**MCP "翻译器"在人类语言和软件命令之间架起了桥梁**。
 
