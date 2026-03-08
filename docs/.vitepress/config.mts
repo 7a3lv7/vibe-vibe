@@ -64,12 +64,185 @@ function resolveSiteUrl(): string {
 const SITE_URL = resolveSiteUrl();
 
 export default withMermaid(defineConfigWithTheme<DefaultTheme.Config>({
-  lang: 'zh-CN',
-  title: SITE_TITLE,
-  description: SITE_DESCRIPTION,
-  
   // 排除 docs/docs 目录不构建
   srcExclude: ['**/docs/**'],
+
+  // i18n 配置
+  locales: {
+    root: {
+      label: '简体中文',
+      lang: 'zh-CN',
+      title: SITE_TITLE,
+      description: SITE_DESCRIPTION,
+      themeConfig: {
+        nav: [
+          { text: '首页', link: '/' },
+          {
+            text: '基础篇',
+            items: [
+              { text: '欢迎来到基础版', link: '/Basic/' },
+              { text: '0. 开始前：你会做出什么，怎么学，卡住怎么办', link: '/Basic/00-preface/' },
+              { text: '1. 第一个版本：2 小时做出你的个人主页 + 数字分身', link: '/Basic/01-awakening/' },
+              { text: '2. 带回自己的工作台：从平台到本地', link: '/Basic/02-mindset/' },
+              { text: '3. 做好第一印象：界面、风格与更有效的需求表达', link: '/Basic/03-technique/' },
+              { text: '4. 让主页更完整：内容、引导与基础存档', link: '/Basic/04-practice-0-to-1/' },
+              { text: '5. 让数字分身更像你：人设、回答与排错', link: '/Basic/05-advanced/' },
+              { text: '6. 正式上线：部署、分享与第一轮真实反馈', link: '/Basic/06-launch/' },
+              { text: '附录', link: '/Basic/99-appendix/' },
+              { text: '结语', link: '/Basic/100-epilogue/' },
+              { text: '下部预告', link: '/Basic/101-next-part/' },
+            ]
+          },
+          {
+            text: '进阶篇',
+            items: [
+              { text: '序-从想法到产品的100小时', link: '/Advanced/' },
+              { text: '01-环境搭建', link: '/Advanced/01-environment-setup/' },
+              { text: '02-AI怎么用', link: '/Advanced/02-ai-tuning-guide/' },
+              { text: '03-从需求到文档', link: '/Advanced/03-prd-doc-driven/' },
+              { text: '04-必须知道的开发知识', link: '/Advanced/04-dev-fundamentals/' },
+              { text: '05-好看好用的界面', link: '/Advanced/05-ui-ux/' },
+              { text: '06-数据存在哪里', link: '/Advanced/06-data-persistence-database/' },
+              { text: '07-连接前后端', link: '/Advanced/07-backend-api/' },
+              { text: '08-谁能访问我的数据', link: '/Advanced/08-auth-security/' },
+              { text: '09-功能测试', link: '/Advanced/09-testing-automation/' },
+              { text: '10-公网访问', link: '/Advanced/10-localhost-public-access/' },
+              { text: '11-协作开发', link: '/Advanced/11-git-collaboration/' },
+              { text: '12-无服务器自动部署', link: '/Advanced/12-serverless-deploy-cicd/' },
+              { text: '13-域名解析与接入', link: '/Advanced/13-domain-dns/' },
+              { text: '14-部署到服务器', link: '/Advanced/14-vps-ops-deploy/' },
+              { text: '15-SEO、分享与数据统计', link: '/Advanced/15-seo-analytics/' },
+              { text: '16-用户反馈与产品迭代', link: '/Advanced/16-user-feedback-iteration/' },
+              { text: 'Next Level', link: '/Advanced/99-next-level/' },
+            ]
+          },
+          {
+            text: '优质文章篇',
+            items: [
+              { text: '总览', link: '/Articles/' },
+              { text: '核心概念与范式演进', link: '/Articles/01-core-concepts/' },
+              { text: '基础技术与架构设计', link: '/Articles/02-technical-architecture/' },
+              { text: '工具链与开发框架', link: '/Articles/03-toolchain-frameworks/' },
+              { text: '工程实施与质量保障', link: '/Articles/04-engineering-practices/' },
+              { text: '安全、合规与局限性', link: '/Articles/05-security-compliance/' },
+              { text: '商业应用与行业趋势', link: '/Articles/06-business-trends/' },
+            ]
+          },
+          {
+            text: '实践案例篇',
+            link: '/Practice/'
+          },
+        ],
+        docFooter: {
+          prev: '上一篇',
+          next: '下一篇'
+        },
+        outline: {
+          label: '页面导航',
+          level: [2, 3]
+        },
+        lastUpdated: {
+          text: '最后更新于',
+          formatOptions: {
+            dateStyle: 'short',
+            timeStyle: 'short'
+          }
+        },
+        returnToTopLabel: '回到顶部',
+        sidebarMenuLabel: '菜单',
+        darkModeSwitchLabel: '主题',
+        lightModeSwitchTitle: '切换到浅色模式',
+        darkModeSwitchTitle: '切换到深色模式',
+      }
+    },
+    en: {
+      label: 'English',
+      lang: 'en-US',
+      title: 'VibeVibe',
+      description: 'Vibe Coding Full-Stack Tutorial - From Next.js to AI-Assisted Development. Reshape your programming workflow with Vibe Coding. Covers zero-to-hero basics, full-stack development, databases, deployment, and more.',
+      link: '/en/',
+      themeConfig: {
+        nav: [
+          { text: 'Home', link: '/en/' },
+          {
+            text: 'Fundamentals',
+            items: [
+              { text: 'Welcome to Fundamentals', link: '/en/Basic/' },
+              { text: '0. Before You Start: What You\'ll Build, How to Learn, What to Do When Stuck', link: '/en/Basic/00-preface/' },
+              { text: '1. Your First Version: Build Your Personal Homepage + Digital Twin in 2 Hours', link: '/en/Basic/01-awakening/' },
+              { text: '2. Bring It to Your Workbench: From Platform to Local', link: '/en/Basic/02-mindset/' },
+              { text: '3. Make a Great First Impression: Interface, Style & Effective Requirements', link: '/en/Basic/03-technique/' },
+              { text: '4. Make Your Homepage Complete: Content, Guidance & Basic Storage', link: '/en/Basic/04-practice-0-to-1/' },
+              { text: '5. Make Your Digital Twin More Like You: Persona, Answers & Debugging', link: '/en/Basic/05-advanced/' },
+              { text: '6. Official Launch: Deploy, Share & First Real Feedback', link: '/en/Basic/06-launch/' },
+              { text: 'Appendix', link: '/en/Basic/99-appendix/' },
+              { text: 'Epilogue', link: '/en/Basic/100-epilogue/' },
+              { text: 'Next Part Preview', link: '/en/Basic/101-next-part/' },
+            ]
+          },
+          {
+            text: 'Advanced',
+            items: [
+              { text: 'Preface - 100 Hours from Idea to Product', link: '/en/Advanced/' },
+              { text: '01-Environment Setup', link: '/en/Advanced/01-environment-setup/' },
+              { text: '02-How to Use AI', link: '/en/Advanced/02-ai-tuning-guide/' },
+              { text: '03-From Requirements to Documentation', link: '/en/Advanced/03-prd-doc-driven/' },
+              { text: '04-Essential Development Knowledge', link: '/en/Advanced/04-dev-fundamentals/' },
+              { text: '05-Beautiful and Usable Interfaces', link: '/en/Advanced/05-ui-ux/' },
+              { text: '06-Where to Store Data', link: '/en/Advanced/06-data-persistence-database/' },
+              { text: '07-Connecting Frontend and Backend', link: '/en/Advanced/07-backend-api/' },
+              { text: '08-Who Can Access My Data', link: '/en/Advanced/08-auth-security/' },
+              { text: '09-Feature Testing', link: '/en/Advanced/09-testing-automation/' },
+              { text: '10-Public Network Access', link: '/en/Advanced/10-localhost-public-access/' },
+              { text: '11-Collaborative Development', link: '/en/Advanced/11-git-collaboration/' },
+              { text: '12-Serverless Auto Deployment', link: '/en/Advanced/12-serverless-deploy-cicd/' },
+              { text: '13-Domain Resolution & Integration', link: '/en/Advanced/13-domain-dns/' },
+              { text: '14-Deploy to Server', link: '/en/Advanced/14-vps-ops-deploy/' },
+              { text: '15-SEO, Sharing & Analytics', link: '/en/Advanced/15-seo-analytics/' },
+              { text: '16-User Feedback & Product Iteration', link: '/en/Advanced/16-user-feedback-iteration/' },
+              { text: 'Next Level', link: '/en/Advanced/99-next-level/' },
+            ]
+          },
+          {
+            text: 'Articles',
+            items: [
+              { text: 'Overview', link: '/en/Articles/' },
+              { text: 'Core Concepts & Paradigm Evolution', link: '/en/Articles/01-core-concepts/' },
+              { text: 'Technical Architecture & Design', link: '/en/Articles/02-technical-architecture/' },
+              { text: 'Toolchain & Development Frameworks', link: '/en/Articles/03-toolchain-frameworks/' },
+              { text: 'Engineering Practices & Quality Assurance', link: '/en/Articles/04-engineering-practices/' },
+              { text: 'Security, Compliance & Limitations', link: '/en/Articles/05-security-compliance/' },
+              { text: 'Business Applications & Industry Trends', link: '/en/Articles/06-business-trends/' },
+            ]
+          },
+          {
+            text: 'Practice',
+            link: '/en/Practice/'
+          },
+        ],
+        docFooter: {
+          prev: 'Previous',
+          next: 'Next'
+        },
+        outline: {
+          label: 'On this page',
+          level: [2, 3]
+        },
+        lastUpdated: {
+          text: 'Last updated',
+          formatOptions: {
+            dateStyle: 'short',
+            timeStyle: 'short'
+          }
+        },
+        returnToTopLabel: 'Return to top',
+        sidebarMenuLabel: 'Menu',
+        darkModeSwitchLabel: 'Theme',
+        lightModeSwitchTitle: 'Switch to light mode',
+        darkModeSwitchTitle: 'Switch to dark mode',
+      }
+    }
+  },
   
   head: [
     // 搜索引擎验证
@@ -686,145 +859,105 @@ Allow: /security.txt
   themeConfig: {
     logo: '/logo.png',
     siteTitle: SITE_TITLE_FRIENDLY,
-    
-    nav: [
-      { text: '首页', link: '/' },
 
+    // 核心：自动生成侧边栏（多语言配置）
+    sidebar: generateSidebar([
       {
-        text: '基础篇',
-        items: [
-          { text: '欢迎来到基础版', link: '/Basic/' },
-          { text: '0. 开始前：你会做出什么，怎么学，卡住怎么办', link: '/Basic/00-preface/' },
-          { text: '1. 第一个版本：2 小时做出你的个人主页 + 数字分身', link: '/Basic/01-awakening/' },
-          { text: '2. 带回自己的工作台：从平台到本地', link: '/Basic/02-mindset/' },
-          { text: '3. 做好第一印象：界面、风格与更有效的需求表达', link: '/Basic/03-technique/' },
-          { text: '4. 让主页更完整：内容、引导与基础存档', link: '/Basic/04-practice-0-to-1/' },
-          { text: '5. 让数字分身更像你：人设、回答与排错', link: '/Basic/05-advanced/' },
-          { text: '6. 正式上线：部署、分享与第一轮真实反馈', link: '/Basic/06-launch/' },
-          { text: '附录', link: '/Basic/99-appendix/' },
-          { text: '结语', link: '/Basic/100-epilogue/' },
-          { text: '下部预告', link: '/Basic/101-next-part/' },
-        ]
-      },
+        documentRootPath: 'docs',
+        scanStartPath: '/',
+        resolvePath: '/',
+        useTitleFromFrontmatter: true,
+        useTitleFromFileHeading: true,
+        useFolderTitleFromIndexFile: true,
+        useFolderLinkFromIndexFile: true,
+        hyphenToSpace: true,
+        sortMenusByFrontmatterOrder: true,
+        frontmatterOrderDefaultValue: 9999,
+        excludeFolders: ['en', 'public', 'assets', '.vitepress', '.claude', 'deployment'],
 
-      {
-        text: '进阶篇',
-        items: [
-          { text: '序-从想法到产品的100小时', link: '/Advanced/' },
-          { text: '01-环境搭建', link: '/Advanced/01-environment-setup/' },
-          { text: '02-AI怎么用', link: '/Advanced/02-ai-tuning-guide/' },
-          { text: '03-从需求到文档', link: '/Advanced/03-prd-doc-driven/' },
-          { text: '04-必须知道的开发知识', link: '/Advanced/04-dev-fundamentals/' },
-          { text: '05-好看好用的界面', link: '/Advanced/05-ui-ux/' },
-          { text: '06-数据存在哪里', link: '/Advanced/06-data-persistence-database/' },
-          { text: '07-连接前后端', link: '/Advanced/07-backend-api/' },
-          { text: '08-谁能访问我的数据', link: '/Advanced/08-auth-security/' },
-          { text: '09-功能测试', link: '/Advanced/09-testing-automation/' },
-          { text: '10-公网访问', link: '/Advanced/10-localhost-public-access/' },
-          { text: '11-协作开发', link: '/Advanced/11-git-collaboration/' },
-          { text: '12-无服务器自动部署', link: '/Advanced/12-serverless-deploy-cicd/' },
-          { text: '13-域名解析与接入', link: '/Advanced/13-domain-dns/' },
-          { text: '14-部署到服务器', link: '/Advanced/14-vps-ops-deploy/' },
-          { text: '15-SEO、分享与数据统计', link: '/Advanced/15-seo-analytics/' },
-          { text: '16-用户反馈与产品迭代', link: '/Advanced/16-user-feedback-iteration/' },
-          { text: 'Next Level', link: '/Advanced/99-next-level/' },
-        ]
-      },
+        manualSortFileNameByPriority: [
+          'Basic', 'Advanced', 'Practice', 'Articles',
+          'Basic/00-preface', 'Basic/01-awakening', 'Basic/02-mindset', 'Basic/03-technique',
+          'Basic/04-practice-0-to-1', 'Basic/05-advanced', 'Basic/06-learning-paths',
+          'Basic/99-appendix', 'Basic/100-epilogue', 'Basic/101-next-part',
+          'Advanced/01-environment-setup', 'Advanced/02-ai-tuning-guide', 'Advanced/03-prd-doc-driven',
+          'Advanced/04-dev-fundamentals', 'Advanced/05-ui-ux', 'Advanced/06-data-persistence-database',
+          'Advanced/07-backend-api', 'Advanced/08-auth-security', 'Advanced/09-testing-automation',
+          'Advanced/10-localhost-public-access', 'Advanced/11-git-collaboration', 'Advanced/12-serverless-deploy-cicd',
+          'Advanced/13-domain-dns', 'Advanced/14-vps-ops-deploy', 'Advanced/15-seo-analytics', 'Advanced/16-user-feedback-iteration',
+          'Advanced/99-next-level',
+          'Practice/01-for-liberal-arts', 'Practice/02-for-stem', 'Practice/03-for-professionals',
+          'Practice/10-core-skills', 'Practice/11-ai-agents', 'Practice/12-fullstack-projects', 'Practice/13-tools-integration',
+          'Articles/01-core-concepts', 'Articles/02-technical-architecture', 'Articles/03-toolchain-frameworks',
+          'Articles/04-engineering-practices', 'Articles/05-security-compliance', 'Articles/06-business-trends'
+        ],
 
-      {
-        text: '优质文章篇',
-        items: [
-          { text: '总览', link: '/Articles/' },
-          { text: '核心概念与范式演进', link: '/Articles/01-core-concepts/' },
-          { text: '基础技术与架构设计', link: '/Articles/02-technical-architecture/' },
-          { text: '工具链与开发框架', link: '/Articles/03-toolchain-frameworks/' },
-          { text: '工程实施与质量保障', link: '/Articles/04-engineering-practices/' },
-          { text: '安全、合规与局限性', link: '/Articles/05-security-compliance/' },
-          { text: '商业应用与行业趋势', link: '/Articles/06-business-trends/' },
-        ]
+        collapsed: true,
+        excludePattern: ['public', 'assets', 'docs', 'en'],
       },
+      {
+        documentRootPath: 'docs',
+        scanStartPath: 'en',
+        resolvePath: '/en/',
+        useTitleFromFrontmatter: true,
+        useTitleFromFileHeading: true,
+        useFolderTitleFromIndexFile: true,
+        useFolderLinkFromIndexFile: true,
+        hyphenToSpace: true,
+        sortMenusByFrontmatterOrder: true,
+        frontmatterOrderDefaultValue: 9999,
 
-      {
-        text: '实践案例篇',
-        link: '/Practice/'
-      },
-    ],
-    
-    // 核心：自动生成侧边栏
-    sidebar: generateSidebar({
-      documentRootPath: 'docs',
-      useTitleFromFrontmatter: true,
-      useTitleFromFileHeading: true,
-      useFolderTitleFromIndexFile: true, 
-      useFolderLinkFromIndexFile: true,
-      hyphenToSpace: true,
-      sortMenusByFrontmatterOrder: true,
-      frontmatterOrderDefaultValue: 9999,
-      
-      manualSortFileNameByPriority: [
-        'Basic', 'Advanced', 'Practice', 'Articles',
-        'Basic/00-preface', 'Basic/01-awakening', 'Basic/02-mindset', 'Basic/03-technique',
-        'Basic/04-practice-0-to-1', 'Basic/05-advanced', 'Basic/06-learning-paths',
-        'Basic/99-appendix', 'Basic/100-epilogue', 'Basic/101-next-part',
-        'Advanced/01-environment-setup', 'Advanced/02-ai-tuning-guide', 'Advanced/03-prd-doc-driven',
-        'Advanced/04-dev-fundamentals', 'Advanced/05-ui-ux', 'Advanced/06-data-persistence-database',
-        'Advanced/07-backend-api', 'Advanced/08-auth-security', 'Advanced/09-testing-automation',
-        'Advanced/10-localhost-public-access', 'Advanced/11-git-collaboration', 'Advanced/12-serverless-deploy-cicd',
-        'Advanced/13-domain-dns', 'Advanced/14-vps-ops-deploy', 'Advanced/15-seo-analytics', 'Advanced/16-user-feedback-iteration',
-        'Advanced/99-next-level',
-        'Practice/01-for-liberal-arts', 'Practice/02-for-stem', 'Practice/03-for-professionals',
-        'Practice/10-core-skills', 'Practice/11-ai-agents', 'Practice/12-fullstack-projects', 'Practice/13-tools-integration',
-        'Articles/01-core-concepts', 'Articles/02-technical-architecture', 'Articles/03-toolchain-frameworks',
-        'Articles/04-engineering-practices', 'Articles/05-security-compliance', 'Articles/06-business-trends'
-      ],
-      
-      collapsed: true,
-      excludePattern: ['public', 'assets', 'docs'], 
-    }),
+        manualSortFileNameByPriority: [
+          'Basic', 'Advanced', 'Practice', 'Articles',
+          'Basic/00-preface', 'Basic/01-awakening', 'Basic/02-mindset', 'Basic/03-technique',
+          'Basic/04-practice-0-to-1', 'Basic/05-advanced', 'Basic/06-learning-paths',
+          'Basic/99-appendix', 'Basic/100-epilogue', 'Basic/101-next-part',
+        ],
+
+        collapsed: true,
+        excludePattern: ['public', 'assets', 'docs'],
+      }
+    ]),
 
     // editLink: {
     //   pattern: 'https://github.com/Eyre921/awesone-vibe-coding-tutorial/edit/main/docs/:path',
     //   text: '在 GitHub 上编辑此页'
     // },
 
-    lastUpdated: {
-      text: '最后更新于',
-      formatOptions: {
-        dateStyle: 'short',
-        timeStyle: 'short'
-      }
-    },
-
-    docFooter: {
-      prev: '上一篇',
-      next: '下一篇'
-    },
-
-    outline: {
-      label: '页面导航',
-      level: [2, 3]
-    },
-
-    returnToTopLabel: '回到顶部',
-    sidebarMenuLabel: '菜单',
-    darkModeSwitchLabel: '主题',
-    lightModeSwitchTitle: '切换到浅色模式',
-    darkModeSwitchTitle: '切换到深色模式',
-
     search: {
       provider: 'local',
       options: {
-        translations: {
-          button: {
-            buttonText: '搜索文档',
-            buttonAriaLabel: '搜索文档'
+        locales: {
+          root: {
+            translations: {
+              button: {
+                buttonText: '搜索文档',
+                buttonAriaLabel: '搜索文档'
+              },
+              modal: {
+                noResultsText: '无法找到相关结果',
+                resetButtonTitle: '清除查询条件',
+                footer: {
+                  selectText: '选择',
+                  navigateText: '切换'
+                }
+              }
+            }
           },
-          modal: {
-            noResultsText: '无法找到相关结果',
-            resetButtonTitle: '清除查询条件',
-            footer: {
-              selectText: '选择',
-              navigateText: '切换'
+          en: {
+            translations: {
+              button: {
+                buttonText: 'Search',
+                buttonAriaLabel: 'Search'
+              },
+              modal: {
+                noResultsText: 'No results found',
+                resetButtonTitle: 'Clear search query',
+                footer: {
+                  selectText: 'Select',
+                  navigateText: 'Navigate'
+                }
+              }
             }
           }
         }
