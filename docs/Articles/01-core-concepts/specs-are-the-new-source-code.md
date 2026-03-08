@@ -15,12 +15,11 @@ tags:
 
 # 规范是新的源代码
 
-
 **作者：Ravi Mehta & Danny Martinez**
 
+**原文：[查看原文](https://blog.ravi-mehta.com/p/specs-are-the-new-source-code)**
 
 <div class="article-meta">
-📅 2025-07-31 | 👤 Ravi Mehta & Danny Martinez | 🔗 <a href="https://blog.ravi-mehta.com/p/specs-are-the-new-source-code" target="_blank">查看原文</a>
 </div>
 
 ## 原型是新规范，规范是新的....源代码？

@@ -14,12 +14,11 @@ tags:
 
 # 使用 AI Gateway 生成视频
 
-
 **作者：Jerilyn Zheng**
 
+**原文：[查看原文](https://vercel.com/blog/video-generation-with-ai-gateway)**
 
 <div class="article-meta">
-📅 2026-03-07 | 👤 Jerilyn Zheng | 🔗 <a href="https://vercel.com/blog/video-generation-with-ai-gateway" target="_blank">查看原文</a>
 </div>
 
 AI Gateway 现已支持视频生成，你可以通过 AI SDK 6 创建电影级质量的视频、同步音频、生成具有一致身份的个性化内容。

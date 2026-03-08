@@ -15,12 +15,11 @@ tags:
 
 # AI代理已经到来，威胁也随之而来
 
-
 **作者：Jay Chen, Royce Lu**
 
+**原文：[查看原文](https://unit42.paloaltonetworks.com/agentic-ai-threats/)**
 
 <div class="article-meta">
-📅 2025-05-01 | 👤 Jay Chen, Royce Lu | 🔗 <a href="https://unit42.paloaltonetworks.com/agentic-ai-threats/" target="_blank">查看原文</a>
 </div>
 
 ## 执行摘要

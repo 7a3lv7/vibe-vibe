@@ -14,12 +14,11 @@ tags:
 
 # AGENTS.md vs Skills：被动上下文为何胜过主动检索
 
-
 **作者：Vercel Team**
 
+**原文：[查看原文](https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals)**
 
 <div class="article-meta">
-📅 2026-03-07 | 👤 Vercel Team | 🔗 <a href="https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals" target="_blank">查看原文</a>
 </div>
 
 > **本文来源**：[Vercel 官方博客](https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals)

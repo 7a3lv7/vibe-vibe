@@ -15,12 +15,11 @@ tags:
 
 # 智能体架构中的安全边界
 
-
 **作者：Malte Ubl, Harpreet Arora**
 
+**原文：[查看原文](https://vercel.com/blog/security-boundaries-in-agentic-architectures)**
 
 <div class="article-meta">
-📅 2026-03-07 | 👤 Malte Ubl, Harpreet Arora | 🔗 <a href="https://vercel.com/blog/security-boundaries-in-agentic-architectures" target="_blank">查看原文</a>
 </div>
 
 > 大多数智能体在生成代码时运行时没有任何隔离。本文介绍如何在智能体架构中划定安全边界，从密钥注入到完整应用沙箱。

@@ -13,12 +13,11 @@ tags:
 
 # 如何成为世界级的智能体工程师
 
-
 **作者：systematicls**
 
+**原文：[查看原文](https://x.com/systematicls/status/2028814227004395561)**
 
 <div class="article-meta">
-📅 2026-03-07 | 👤 systematicls | 🔗 <a href="https://x.com/systematicls/status/2028814227004395561" target="_blank">查看原文</a>
 </div>
 
 > **本文来源**：改编自 [systematicls 的 Twitter 分享](https://x.com/systematicls/status/2028814227004395561)

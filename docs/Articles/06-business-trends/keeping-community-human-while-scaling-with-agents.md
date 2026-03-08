@@ -15,12 +15,11 @@ tags:
 
 # 用 AI Agent 扩展社区的同时保持人性化
 
-
 **作者：Pauline P. Narvas**
 
+**原文：[查看原文](https://vercel.com/blog/keeping-community-human-while-scaling-with-agents)**
 
 <div class="article-meta">
-📅 2026-03-07 | 👤 Pauline P. Narvas | 🔗 <a href="https://vercel.com/blog/keeping-community-human-while-scaling-with-agents" target="_blank">查看原文</a>
 </div>
 
 在 Vercel，开发者社区是我们所做一切的核心。这是我们与使用我们产品的人保持最紧密联系的方式。

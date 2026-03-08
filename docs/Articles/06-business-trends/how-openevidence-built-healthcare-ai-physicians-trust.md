@@ -15,12 +15,11 @@ tags:
 
 # OpenEvidence 如何构建医生真正信任的医疗 AI
 
-
 **作者：Nic Vargas**
 
+**原文：[查看原文](https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust)**
 
 <div class="article-meta">
-📅 2026-03-07 | 👤 Nic Vargas | 🔗 <a href="https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust" target="_blank">查看原文</a>
 </div>
 
 创业公司的速度，医院级的可靠性，零妥协。

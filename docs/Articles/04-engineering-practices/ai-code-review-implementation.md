@@ -15,12 +15,11 @@ tags:
 
 # AI 代码审查的实施与最佳实践
 
-
 **作者：Greg Foster**
 
+**原文：[查看原文](https://graphite.com/guides/ai-code-review-implementation-best-practices)**
 
 <div class="article-meta">
-📅 2025-08-00 | 👤 Greg Foster | 🔗 <a href="https://graphite.com/guides/ai-code-review-implementation-best-practices" target="_blank">查看原文</a>
 </div>
 
 ## 摘要

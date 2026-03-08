@@ -14,12 +14,11 @@ tags:
 
 # 我们删掉了智能体 80% 的工具
 
-
 **作者：Andrew Qu**
 
+**原文：[查看原文](https://vercel.com/blog/we-removed-80-percent-of-our-agents-tools)**
 
 <div class="article-meta">
-📅 2026-03-07 | 👤 Andrew Qu | 🔗 <a href="https://vercel.com/blog/we-removed-80-percent-of-our-agents-tools" target="_blank">查看原文</a>
 </div>
 
 > Vercel 花了数月构建复杂的 text-to-SQL 智能体，但最终发现：有时候简单就是更好。给它执行任意 bash 命令的能力，反而超越了所有精心设计的工具。

@@ -14,12 +14,11 @@ tags:
 
 # Vercel 如何构建 Coding Agent 的 AEO 追踪系统
 
-
 **作者：Eric Dodds, Allen Zhou**
 
+**原文：[查看原文](https://vercel.com/blog/how-we-built-aeo-tracking-for-coding-agents)**
 
 <div class="article-meta">
-📅 2026-03-07 | 👤 Eric Dodds, Allen Zhou | 🔗 <a href="https://vercel.com/blog/how-we-built-aeo-tracking-for-coding-agents" target="_blank">查看原文</a>
 </div>
 
 AI 改变了人们查找信息的方式。对企业而言，理解 LLM 如何搜索和总结其网站内容至关重要。
