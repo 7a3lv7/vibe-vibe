@@ -1,7 +1,7 @@
 ---
 title: "4.6 Configuration File Formats"
 description: "Understand JSON and YAML configuration formats"
-chapter: "第四章"
+chapter: "Chapter 4"
 priority: "🟢"
 ---
 
@@ -41,20 +41,20 @@ Compared with loose natural language, clearly structured formats are the kind of
 
 ## JSON Format
 
-**JSON（JavaScript Object Notation）** is the most commonly used data exchange format.
+**JSON (JavaScript Object Notation)** is the most commonly used data exchange format.
 
 ### Syntax Rules
 
 ```json
 {
-  "name": "张三",
+  "name": "John",
   "age": 25,
-  "email": "zhang@example.com",
+  "email": "john@example.com",
   "address": {
-    "city": "北京",
-    "district": "朝阳"
+    "city": "Beijing",
+    "district": "Chaoyang"
   },
-  "hobbies": ["阅读", "游泳", "编程"]
+  "hobbies": ["reading", "swimming", "programming"]
 }
 ```
 
@@ -71,8 +71,8 @@ Compared with loose natural language, clearly structured formats are the kind of
 | Type | Example | Description |
 |------|------|------|
 | String | `"hello"` | Wrapped in double quotes |
-| Number | `123`、`3.14` | Integer or floating-point number |
-| Boolean | `true`、`false` | True/false |
+| Number | `123`, `3.14` | Integer or floating-point number |
+| Boolean | `true`, `false` | True/false |
 | Array | `[1, 2, 3]` | An ordered list of data |
 | Object | `{"key": "value"}` | A collection of key-value pairs |
 | null | `null` | Empty value |
@@ -96,26 +96,26 @@ Whether you're writing a backend in Python, a frontend in JavaScript, or having 
 
 ## YAML Format
 
-**YAML（YAML Ain't Markup Language）** is a more human-friendly configuration format.
+**YAML (YAML Ain't Markup Language)** is a more human-friendly configuration format.
 
 ### Syntax Rules
 
 ```yaml
-# 用户信息
-name: 张三
+# User info
+name: John
 age: 25
-email: zhang@example.com
+email: john@example.com
 
-# 地址信息
+# Address info
 address:
-  city: 北京
-  district: 朝阳
+  city: Beijing
+  district: Chaoyang
 
-# 爱好列表
+# Hobbies
 hobbies:
-  - 阅读
-  - 游泳
-  - 编程
+  - reading
+  - swimming
+  - programming
 ```
 
 **Rule overview**:
@@ -144,14 +144,14 @@ YAML is like a "checklist," while JSON is like a "table." YAML feels easier for 
 
 ## CSV: A Flat File Format
 
-When discussing structured data, **CSV（Comma-Separated Values）** is one of the simplest formats. It stores tabular data as plain text, with each line representing a record and fields separated by commas.
+When discussing structured data, **CSV (Comma-Separated Values)** is one of the simplest formats. It stores tabular data as plain text, with each line representing a record and fields separated by commas.
 
 **CSV example**:
 
 ```csv
 name,email,age
-张三,zhang@example.com,25
-李四,li@example.com,30
+John,john@example.com,25
+Jane,jane@example.com,30
 ```
 
 **Characteristics of CSV**:
@@ -201,13 +201,13 @@ CSV is a great fit when you need to export data from a spreadsheet or exchange s
 ```json
 {
   "id": "user_123",
-  "name": "张三",
-  "email": "zhang@example.com",
+  "name": "John",
+  "email": "john@example.com",
   "avatar": "https://example.com/avatar.jpg",
   "location": {
-    "country": "中国",
-    "province": "北京",
-    "city": "北京"
+    "country": "China",
+    "province": "Beijing",
+    "city": "Beijing"
   },
   "birthday": "1990-01-15",
   "phone": "+86 138 0000 0000"
@@ -217,21 +217,21 @@ CSV is a great fit when you need to export data from a spreadsheet or exchange s
 ### YAML: App Configuration
 
 ```yaml
-# 应用配置
+# App configuration
 app:
-  name: "我的博客"
+  name: "My Blog"
   version: "1.0.0"
   port: 3000
 
-# 数据库配置
+# Database configuration
 database:
   host: "localhost"
   port: 5432
   name: "blog_db"
   user: "admin"
-  password: "${DB_PASSWORD}"  # 引用环境变量
+  password: "${DB_PASSWORD}"  # Reference environment variable
 
-# 功能开关
+# Feature flags
 features:
   enable_comments: true
   enable_analytics: false
@@ -246,13 +246,13 @@ features:
     "posts": [
       {
         "id": "1",
-        "title": "第一篇文章",
-        "author": "张三"
+        "title": "First Article",
+        "author": "John"
       },
       {
         "id": "2",
-        "title": "第二篇文章",
-        "author": "李四"
+        "title": "Second Article",
+        "author": "Jane"
       }
     ],
     "total": 2,
@@ -264,8 +264,8 @@ features:
 ### YAML: CI/CD Configuration
 
 ```yaml
-# GitHub Actions 配置
-name: 部署
+# GitHub Actions configuration
+name: Deploy
 on:
   push:
     branches: [main]
@@ -275,11 +275,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: 安装依赖
+      - name: Install dependencies
         run: pnpm install
-      - name: 构建
+      - name: Build
         run: pnpm build
-      - name: 部署
+      - name: Deploy
         run: pnpm deploy
 ```
 
@@ -287,7 +287,7 @@ jobs:
 
 ## Usage in Development
 
-### package.json（JSON）
+### package.json (JSON)
 
 The configuration file for Node.js projects, which defines project dependencies and scripts:
 
@@ -307,7 +307,7 @@ The configuration file for Node.js projects, which defines project dependencies 
 }
 ```
 
-### tsconfig.json（JSON）
+### tsconfig.json (JSON)
 
 TypeScript configuration file:
 
