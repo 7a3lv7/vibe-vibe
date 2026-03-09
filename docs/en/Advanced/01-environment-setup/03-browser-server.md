@@ -1,7 +1,7 @@
 ---
 title: "1.3 Browser and Server Basics"
 description: "Understand the runtime environment of Web applications"
-chapter: "第一章"
+chapter: "Chapter 1"
 ---
 
 # 1.3 Browser and Server Basics

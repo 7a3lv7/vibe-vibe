@@ -1,7 +1,7 @@
 ---
 title: "1.8 Localhost and Ports"
 description: "Understand the local development environment and master port management"
-chapter: "第一章"
+chapter: "Chapter 1"
 ---
 
 # 1.8 Localhost and Ports
@@ -245,7 +245,7 @@ When users visit `https://example.com`, the request first goes to Nginx (listeni
 **Of course, you can also let users access IP + port directly**:
 
 ```
-http://你的服务器IP:3000
+http://your-server-IP:3000
 ```
 
 But that's not very user-friendly, and it exposes the port number. It's recommended to use Nginx as a reverse proxy so users only need to remember the domain name.

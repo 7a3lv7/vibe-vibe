@@ -1,7 +1,7 @@
 ---
 title: "1.6 Models and Tools"
 description: "Understand the difference between models and tools, and choose the right AI coding setup"
-chapter: "第一章"
+chapter: "Chapter 1"
 ---
 
 # 1.6 Models and Tools
@@ -26,8 +26,8 @@ If you haven't installed Claude Code and configured a model yet, please refer to
 
 | Category | Representative Products |
 |------|---------|
-| **China** | [GLM](https://open.bigmodel.cn/)（智谱）、[DeepSeek](https://www.deepseek.com/)、[Kimi](https://kimi.moonshot.cn/)（月之暗面）、[Doubao](https://www.doubao.com/)（字节）、[MiniMax](https://www.minimaxi.com/) |
-| **International** | [GPT](https://openai.com/)（OpenAI）、[Gemini](https://gemini.google.com/)（Google）、[Claude](https://claude.ai/)（Anthropic） |
+| **China** | [GLM](https://open.bigmodel.cn/) (Zhipu), [DeepSeek](https://www.deepseek.com/), [Kimi](https://kimi.moonshot.cn/) (Moonshot), [Doubao](https://www.doubao.com/) (ByteDance), [MiniMax](https://www.minimaxi.com/) |
+| **International** | [GPT](https://openai.com/) (OpenAI), [Gemini](https://gemini.google.com/) (Google), [Claude](https://claude.ai/) (Anthropic) |
 
 **Tools** are responsible for executing specific actions, such as reading files, running commands, and committing code. Tools need to be connected to a model in order to work.
 
@@ -123,7 +123,7 @@ An API Key is the "pass" for calling large-model services. It serves as your ide
 
 ```bash
 npx @z_ai/coding-helper
-# 输入获取到的 API Key，工具会自动完成所有配置
+# Enter the API Key you obtained; the tool will auto-complete all configuration
 ```
 
 ### Cost Comparison

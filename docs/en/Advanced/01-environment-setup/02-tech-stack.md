@@ -1,7 +1,7 @@
 ---
 title: "1.2 Tech Stack Concepts"
 description: "Understand the layers of modern Web development technologies"
-chapter: "第一章"
+chapter: "Chapter 1"
 ---
 
 # 1.2 Tech Stack Concepts

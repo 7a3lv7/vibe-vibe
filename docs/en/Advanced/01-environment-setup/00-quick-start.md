@@ -1,7 +1,7 @@
 ---
 title: "1.0 Quick Start"
 description: "Set up your environment and start AI coding in 5 minutes"
-chapter: "第一章"
+chapter: "Chapter 1"
 ---
 
 # 1.0 Quick Start

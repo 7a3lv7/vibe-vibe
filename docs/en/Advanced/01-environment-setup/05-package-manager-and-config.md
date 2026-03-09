@@ -1,7 +1,7 @@
 ---
 title: "1.5 Package Management and Project Configuration"
 description: "Understand how nvm and pnpm work"
-chapter: "第一章"
+chapter: "Chapter 1"
 ---
 
 # 1.5 Package Management and Project Configuration
@@ -72,7 +72,7 @@ If you're not sure, let AI decide which one to use.
 In addition to project dependencies, you can also use npm to install **global tools**—these tools can be used from anywhere on your computer:
 
 ```bash
-# 安装全局 CLI 工具
+# Install global CLI tools
 npm install -g @anthropic-ai/claude-code
 ```
 
@@ -139,7 +139,7 @@ An automatically generated lock file that records the exact version of each depe
 Specifies the recommended Node.js version for the project:
 
 ```bash
-# .nvmrc 文件内容
+# .nvmrc file contents
 24
 ```
 
@@ -173,8 +173,8 @@ graph TB
 You need to reload the configuration or restart the terminal:
 
 ```bash
-source ~/.zshrc   # 如果使用 zsh
-source ~/.bashrc  # 如果使用 bash
+source ~/.zshrc   # If using zsh
+source ~/.bashrc  # If using bash
 ```
 
 ### Q: How can I check which Node.js version a project needs?
