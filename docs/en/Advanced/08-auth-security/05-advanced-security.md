@@ -1,7 +1,7 @@
 ---
 title: "8.5 Advanced Security Hardening"
 description: "SQL injection, XSS, CSRF protection, AI application security, dependency auditing—understand deeper security threats"
-chapter: "第八章"
+chapter: "Chapter 8"
 ---
 
 # 8.5 Advanced Security Hardening

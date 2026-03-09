@@ -1,7 +1,7 @@
 ---
 title: "8.4 Security Checks and Troubleshooting"
 description: "Security checklists for before/during/after development, plus symptoms → causes → solutions for common security issues"
-chapter: "第八章"
+chapter: "Chapter 8"
 ---
 
 # 8.4 Security Checks and Troubleshooting

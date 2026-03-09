@@ -1,7 +1,7 @@
 ---
 title: "8.0 Quick User System Example"
 description: "A complete user authentication flow based on Better Auth, from signup to protected routes"
-chapter: "第八章"
+chapter: "Chapter 8"
 ---
 
 # 8.0 Quick User System Example
@@ -154,7 +154,7 @@ import { createAuthClient } from 'better-auth/react'
 
 export const authClient = createAuthClient()
 
-// 在组件中使用：
+// Using in a component:
 const { data: session } = authClient.useSession()
 ```
 
@@ -179,7 +179,7 @@ export default async function Dashboard() {
   })
   if (!session) redirect('/login')
 
-  return <h1>欢迎回来，{session.user.name}</h1>
+  return <h1>Welcome back, {session.user.name}</h1>
 }
 ```
 

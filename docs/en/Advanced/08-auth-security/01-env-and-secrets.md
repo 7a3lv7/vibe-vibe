@@ -1,7 +1,7 @@
 ---
 title: "8.1 Secret Management and Environment Variables"
 description: "Protect your API keys and database passwords—.env, .gitignore, Server vs Client boundaries, and cloud configuration"
-chapter: "第八章"
+chapter: "Chapter 8"
 ---
 
 # 8.1 Secret Management and Environment Variables

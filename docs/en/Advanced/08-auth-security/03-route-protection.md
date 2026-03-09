@@ -1,7 +1,7 @@
 ---
 title: "8.3 Route Protection and Access Control"
 description: "Middleware, CORS, page-level vs. API-level protection, role-based permissions—make sure every request is checked"
-chapter: "第八章"
+chapter: "Chapter 8"
 ---
 
 # 8.3 Route Protection and Access Control
@@ -32,12 +32,12 @@ In Next.js, you don’t need to write permission checks on every page. You just 
 <summary>Curious what Middleware looks like? Expand to take a look</summary>
 
 ```typescript
-// middleware.ts（项目根目录）
+// middleware.ts (project root)
 import { betterFetch } from '@better-fetch/fetch'
 import { NextRequest, NextResponse } from 'next/server'
 
 export async function middleware(request: NextRequest) {
-  // 检查用户是否登录
+  // Check if the user is logged in
   const { data: session } = await betterFetch('/api/auth/get-session', {
     baseURL: request.nextUrl.origin,
     headers: { cookie: request.headers.get('cookie') || '' },
@@ -50,7 +50,7 @@ export async function middleware(request: NextRequest) {
   return NextResponse.next()
 }
 
-// 指定哪些路径需要保护
+// Specify which paths need protection
 export const config = {
   matcher: ['/dashboard/:path*', '/admin/:path*'],
 }

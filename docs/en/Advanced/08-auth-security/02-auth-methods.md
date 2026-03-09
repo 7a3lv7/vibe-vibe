@@ -1,7 +1,7 @@
 ---
 title: "8.2 Authentication Methods and Choosing a Solution"
 description: "Session vs Token, OAuth, Passkeys, Magic Link—understand the differences between authentication methods and choose the right auth library for your project"
-chapter: "第八章"
+chapter: "Chapter 8"
 ---
 
 # 8.2 Authentication Methods and Choosing a Solution
