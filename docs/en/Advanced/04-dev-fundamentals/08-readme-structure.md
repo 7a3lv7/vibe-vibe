@@ -1,7 +1,7 @@
 ---
 title: "4.8 Project Documentation Structure"
 description: "Write a complete project README.md document"
-chapter: "第四章"
+chapter: "Chapter 4"
 priority: "🟢"
 ---
 
@@ -48,9 +48,9 @@ A complete project README includes the following sections:
 Use one or two sentences to explain what the project is and what problem it solves.
 
 ```markdown
-# 极简待办清单
+# Minimal To-Do List
 
-一个给自己用的极简待办清单网页，支持添加、完成和删除任务。
+A minimalist personal to-do list web app that supports adding, completing, and deleting tasks.
 ```
 
 ### 2. Quick Start
@@ -58,21 +58,21 @@ Use one or two sentences to explain what the project is and what problem it solv
 Tell users how to run the project quickly.
 
 ```markdown
-## 快速开始
+## Quick Start
 
-### 安装依赖
+### Install Dependencies
 
 \`\`\`bash
 pnpm install
 \`\`\`
 
-### 启动开发服务器
+### Start the Development Server
 
 \`\`\`bash
 pnpm dev
 \`\`\`
 
-访问 http://localhost:3000 查看效果。
+Visit http://localhost:3000 to see it in action.
 ```
 
 ### 3. Environment Variables
@@ -80,15 +80,15 @@ pnpm dev
 List the environment variables required by the project.
 
 ```markdown
-## 环境变量
+## Environment Variables
 
-复制 `.env.example` 为 `.env.local`，然后填写以下变量：
+Copy `.env.example` to `.env.local`, then fill in the following variables:
 
 \`\`\`bash
-# 数据库连接
+# Database connection
 DATABASE_URL=postgresql://user:password@localhost:5432/dbname
 
-# API 密钥
+# API key
 OPENAI_API_KEY=sk-xxx
 \`\`\`
 ```
@@ -98,11 +98,11 @@ OPENAI_API_KEY=sk-xxx
 Introduce the project's main functional modules.
 
 ```markdown
-## 核心功能
+## Core Features
 
-- **任务管理**：添加、完成、删除待办任务
-- **数据持久化**：刷新页面数据不丢失
-- **极简界面**：专注核心体验，无干扰
+- **Task Management**: Add, complete, and delete to-do tasks
+- **Data Persistence**: Data is preserved across page refreshes
+- **Minimalist Interface**: Focused on the core experience, distraction-free
 ```
 
 ### 5. Tech Stack
@@ -110,13 +110,13 @@ Introduce the project's main functional modules.
 List the technologies used in the project.
 
 ```markdown
-## 技术栈
+## Tech Stack
 
-- **框架**：Next.js 14 (App Router)
-- **语言**：TypeScript
-- **样式**：Tailwind CSS
-- **数据库**：PostgreSQL + Drizzle ORM
-- **部署**：Vercel
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Database**: PostgreSQL + Drizzle ORM
+- **Deployment**: Vercel
 ```
 
 ### 6. Project Structure
@@ -124,17 +124,17 @@ List the technologies used in the project.
 Show the project's directory structure.
 
 ```markdown
-## 项目结构
+## Project Structure
 
 \`\`\`
 src/
 ├── app/              # Next.js App Router
-│   ├── page.tsx      # 首页
-│   ├── layout.tsx    # 布局
-│   └── api/          # API 路由
-├── components/       # React 组件
-├── lib/             # 工具函数
-└── db/              # 数据库配置
+│   ├── page.tsx      # Home page
+│   ├── layout.tsx    # Layout
+│   └── api/          # API routes
+├── components/       # React components
+├── lib/             # Utility functions
+└── db/              # Database configuration
 \`\`\`
 ```
 
@@ -143,21 +143,21 @@ src/
 (Optional) Detailed instructions for developers.
 
 ```markdown
-## 开发指南
+## Development Guide
 
-### 添加新功能
+### Adding New Features
 
-1. 在 `src/app/api/` 创建新的 API 路由
-2. 在 `src/components/` 创建对应的 UI 组件
-3. 更新 `src/app/page.tsx` 集成新功能
+1. Create a new API route in `src/app/api/`
+2. Create the corresponding UI component in `src/components/`
+3. Update `src/app/page.tsx` to integrate the new feature
 
-### 代码风格
+### Code Style
 
-项目使用 ESLint 和 Prettier 确保代码风格一致：
+The project uses ESLint and Prettier to ensure consistent code style:
 
 \`\`\`bash
-pnpm lint    # 检查代码
-pnpm format  # 格式化代码
+pnpm lint    # Check code
+pnpm format  # Format code
 \`\`\`
 ```
 
@@ -166,15 +166,15 @@ pnpm format  # 格式化代码
 (Optional) Tell others how to contribute to the project.
 
 ```markdown
-## 贡献
+## Contributing
 
-欢迎提交 Issue 和 Pull Request！
+Issues and Pull Requests are welcome!
 
-1. Fork 本项目
-2. 创建功能分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'feat: 添加某功能'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启 Pull Request
+1. Fork this project
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'feat: add some feature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 ```
 
 ### 9. License
@@ -182,7 +182,7 @@ pnpm format  # 格式化代码
 Declare the project's open source license.
 
 ```markdown
-## 许可证
+## License
 
 [MIT License](LICENSE)
 ```
@@ -194,22 +194,22 @@ Declare the project's open source license.
 Below is a complete README template:
 
 ```markdown
-# [项目名称]
+# [Project Name]
 
-[一句话描述项目]
+[One-line project description]
 
-## 简介
+## Introduction
 
-[详细说明项目背景、目标和核心价值]
+[Detailed explanation of the project background, goals, and core value]
 
-## 快速开始
+## Quick Start
 
-### 环境要求
+### Prerequisites
 
 - Node.js 18+
 - pnpm
 
-### 安装
+### Installation
 
 \`\`\`bash
 git clone https://github.com/username/repo.git
@@ -217,68 +217,68 @@ cd repo
 pnpm install
 \`\`\`
 
-### 配置
+### Configuration
 
 \`\`\`bash
 cp .env.example .env.local
-# 编辑 .env.local 填写配置
+# Edit .env.local and fill in the configuration
 \`\`\`
 
-### 运行
+### Running
 
 \`\`\`bash
-pnpm dev    # 开发模式
-pnpm build  # 构建
-pnpm start  # 生产运行
+pnpm dev    # Development mode
+pnpm build  # Build
+pnpm start  # Production mode
 \`\`\`
 
-## 功能特性
+## Features
 
-- 功能一：描述
-- 功能二：描述
-- 功能三：描述
+- Feature 1: Description
+- Feature 2: Description
+- Feature 3: Description
 
-## 技术栈
+## Tech Stack
 
-- 技术 A
-- 技术 B
-- 技术 C
+- Technology A
+- Technology B
+- Technology C
 
-## 项目结构
+## Project Structure
 
 \`\`\`
-目录结构树状图
+Directory tree structure
 \`\`\`
 
-## 开发指南
+## Development Guide
 
-[开发相关说明]
+[Development-related notes]
 
-## 部署
+## Deployment
 
-[部署相关说明]
+[Deployment-related notes]
 
-## 常见问题
+## FAQ
 
-### Q: 常见问题一？
+### Q: Common question 1?
 
-A: 解答
+A: Answer
 
-## 贡献
+## Contributing
 
-[贡献指南]
+[Contribution guidelines]
 
-## 许可证
+## License
 
-[许可证信息]
+[License information]
 
-## 致谢
+## Acknowledgments
 
-[感谢列表]
+[Acknowledgments list]
 
 ---
 
-**注意**：请勿将包含敏感信息的 `.env.local` 文件提交到 Git。
+**Note**: Do not commit the `.env.local` file containing sensitive information to Git.
 ```
 
 ---
@@ -292,19 +292,19 @@ In the era of AI-assisted development, README also serves the role of providing 
 Adding the following content to your README can help AI better understand the project:
 
 ```markdown
-## 给 AI 的项目上下文
+## Project Context for AI
 
-### 项目目标
-[清晰描述项目要解决的问题]
+### Project Goals
+[Clearly describe the problem the project solves]
 
-### 核心概念
-[解释项目中的关键概念和术语]
+### Core Concepts
+[Explain the key concepts and terminology used in the project]
 
-### 重要约定
-[列出代码风格、命名规范等约定]
+### Important Conventions
+[List code style, naming conventions, and other agreements]
 
-### 常见任务
-[列出常见任务的操作方法，如"如何添加新页面"]
+### Common Tasks
+[List how to perform common tasks, e.g. "How to add a new page"]
 ```
 
 ::: tip README Is a Source of Context for AI
