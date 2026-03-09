@@ -833,8 +833,8 @@ AI tried to fix a bug and modified 10 files, now everything is broken. You want 
 
 **Effect**:
 
-- AI finishes login feature → automatically `git commit -m "feat: 实现登录"`
-- AI finishes homepage → automatically `git commit -m "feat: 添加首页"`
+- AI finishes login feature → automatically `git commit -m "feat: implement login"`
+- AI finishes homepage → automatically `git commit -m "feat: add homepage"`
 - AI breaks code → `git log` to find previous version, `git reset` to roll back
 
 **Auto-commit vs Checkpoints**:

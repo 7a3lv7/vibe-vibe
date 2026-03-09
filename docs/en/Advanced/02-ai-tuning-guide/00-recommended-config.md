@@ -1,7 +1,7 @@
 ---
 title: "2.0 Recommended Configuration"
 description: "Reference for efficient Claude Code configuration"
-chapter: "第二章"
+chapter: "Chapter 2"
 ---
 
 # 2.0 Recommended Configuration

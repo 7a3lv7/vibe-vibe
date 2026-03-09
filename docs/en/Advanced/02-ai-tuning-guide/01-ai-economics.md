@@ -1,7 +1,7 @@
 ---
 title: "2.1 The Economics of AI Programming"
 description: "Understanding the Token Mechanism and Cost Optimization"
-chapter: "第二章"
+chapter: "Chapter 2"
 priority: "🔴"
 ---
 

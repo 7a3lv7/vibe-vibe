@@ -1,7 +1,7 @@
 ---
 title: "2.5 Efficient Debugging Mindset"
 description: "Complete logs and iterative fixes"
-chapter: "第二章"
+chapter: "Chapter 2"
 ---
 
 # 2.5 Efficient Debugging Mindset 🟢
@@ -79,7 +79,7 @@ Please continue analyzing it
 
 **Usually it takes 2-3 rounds to solve**, so don't give up.
 
-**Iterative fix pattern**：
+**Iterative fix pattern**:
 
 ```mermaid
 graph TB
@@ -116,7 +116,7 @@ You changed the code, the build failed, and the error output is 50 lines long. Y
 - AI can handle small issues on its own (version conflicts, missing dependencies)
 - You only need to check the result
 
-**Best use cases**：
+**Best use cases**:
 
 | Scenario | Why it's a good fit |
 |------|-----------|
@@ -124,7 +124,7 @@ You changed the code, the build failed, and the error output is 50 lines long. Y
 | Too many errors | Checking them one by one is too slow, so let AI handle them in parallel |
 | CI/CD failed | You can't reproduce it locally, so let AI run it locally |
 
-**Notes**：
+**Notes**:
 
 - ✅ `git commit` first, so you can roll back if AI breaks something
 - ✅ The first run may be slow, so be patient
@@ -136,20 +136,20 @@ You changed the code, the build failed, and the error output is 50 lines long. Y
 
 ### Example 1: Type error
 
-**Error log**：
+**Error log**:
 
 ```
 Type error: 'user' is possibly 'undefined'.
   at App (app/page.tsx:15:10)
 ```
 
-**❌ Bad description**：
+**❌ Bad description**:
 
 ```
 "It's a type error, help me take a look"
 ```
 
-**✅ Good description**：
+**✅ Good description**:
 
 ```
 TypeScript error:
@@ -165,7 +165,7 @@ return <div>{user.name}</div>;  // line 15
 How should I handle the possibility of undefined?
 ```
 
-**AI analysis**：
+**AI analysis**:
 
 ```
 user could be undefined, so you need to:
@@ -178,7 +178,7 @@ user could be undefined, so you need to:
 
 ### Example 2: Runtime error
 
-**Error log**：
+**Error log**:
 
 ```
 Error: connect ECONNREFUSED 127.0.0.1:5432
@@ -186,13 +186,13 @@ Error: connect ECONNREFUSED 127.0.0.1:5432
     at Socket.emit (events.js:315:13)
 ```
 
-**❌ Bad description**：
+**❌ Bad description**:
 
 ```
 "Database connection failed"
 ```
 
-**✅ Good description**：
+**✅ Good description**:
 
 ```
 Database connection error:
@@ -210,7 +210,7 @@ Possible causes:
 3. Incorrect .env configuration?
 ```
 
-**AI analysis**：
+**AI analysis**:
 
 ```
 ECONNREFUSED means the service is not running.
@@ -226,7 +226,7 @@ Check:
 
 ### Example 3: Build error
 
-**Error log**：
+**Error log**:
 
 ```
 ✘ [ERROR] Could not resolve "./components/Button"
@@ -237,13 +237,13 @@ Check:
     This file does not exist.
 ```
 
-**❌ Bad description**：
+**❌ Bad description**:
 
 ```
 "The build failed"
 ```
 
-**✅ Good description**：
+**✅ Good description**:
 
 ```
 Build error:
@@ -289,7 +289,7 @@ graph LR
     D --> F[Repeated attempts]
 ```
 
-**Remember**：
+**Remember**:
 
 1. **Complete logs**: don't trim them down; stack trace information is very important
 2. **Steps to reproduce**: explain what you did that triggered the error
@@ -297,7 +297,7 @@ graph LR
 4. **Iterative fixes**: don't give up; it usually takes 2-3 rounds
 5. **Report the result**: after each fix, tell AI what happened next
 
-**Debugging formula**：
+**Debugging formula**:
 
 ```
 Complete error log
@@ -306,7 +306,7 @@ Complete error log
 = Fast solution
 ```
 
-**Ultimate move formula**：
+**Ultimate move formula**:
 
 ```
 git commit to save the current state
