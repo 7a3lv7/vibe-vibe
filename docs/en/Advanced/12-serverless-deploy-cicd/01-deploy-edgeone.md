@@ -32,7 +32,7 @@ Click **Import Git** repository, then choose **Connect GitHub**.
 
 The first time you connect, you'll be taken to GitHub's authorization page. There's a choice to make here: authorize all repositories, or only specific ones?
 
-Xiaoming chose "Only select repositories" and authorized just one repository: "个人豆瓣". This follows the **principle of least privilege**—give the platform only the permissions it needs, nothing more. If you want to deploy other projects later, you can come back and add them then. This habit was already mentioned in the security section of Chapter 8, and it applies just as much during deployment.
+Xiaoming chose "Only select repositories" and authorized just one repository: "Personal Douban". This follows the **principle of least privilege**—give the platform only the permissions it needs, nothing more. If you want to deploy other projects later, you can come back and add them then. This habit was already mentioned in the security section of Chapter 8, and it applies just as much during deployment.
 
 Once authorization is complete, you'll see your repository list. Select the project you want to deploy and click **Next**.
 
@@ -62,16 +62,16 @@ The **Output Directory** is `.next`. This is where Next.js places the generated 
 
 On the build settings page, find the **Environment Variables** section near the bottom.
 
-Remember what we just said? The `.env` file wasn't uploaded to GitHub, so you need to manually enter those variables here. EdgeOne Pages supports **bulk import**—just paste in the contents of your `.env` file, and the platform will automatically parse them into key-value pairs![image-20260227005320209](/images/Advanced/image-20260227005320209.png)。
+Remember what we just said? The `.env` file wasn't uploaded to GitHub, so you need to manually enter those variables here. EdgeOne Pages supports **bulk import**—just paste in the contents of your `.env` file, and the platform will automatically parse them into key-value pairs.![image-20260227005320209](/images/Advanced/image-20260227005320209.png)
 
 
 
 Xiaoming's project needs these variables:
 
 ```bash
-DATABASE_URL="postgresql://..."        # 数据库连接字符串，没有它应用连不上数据库
-BETTER_AUTH_SECRET="xxx"               # 认证密钥，没有它登录功能会报错
-BETTER_AUTH_URL="https://你的域名"      # 认证回调地址，先留空，部署成功拿到链接后再改
+DATABASE_URL="postgresql://..."        # Database connection string; the app can't connect without it
+BETTER_AUTH_SECRET="xxx"               # Auth secret; login will fail without it
+BETTER_AUTH_URL="https://your-domain"  # Auth callback URL; leave empty for now, update after deployment
 ```
 
 Each variable serves a purpose. If `DATABASE_URL` is missing, the app will fail at startup with "Cannot connect to database"; if `BETTER_AUTH_SECRET` is missing, user login will fail with a 500 error. If you're not sure which variables you need, open your local `.env` file—anything in there needs to be configured here too.
@@ -116,7 +116,7 @@ After a successful build, the platform generates a preview link in a format like
 
 ![image-20260302003255608](/images/Advanced/image-20260302003255608.png)
 
-Xiaoming opened the link and saw his "个人豆瓣"—exactly the same as his local version, except now it was live on the public internet. He sent the link to his friend, who opened it instantly and replied: "Finally, it works!"
+Xiaoming opened the link and saw his "Personal Douban"—exactly the same as his local version, except now it was live on the public internet. He sent the link to his friend, who opened it instantly and replied: "Finally, it works!"
 
 This is the most rewarding moment in the tutorial so far: **the code you wrote is now accessible to the whole world.**
 

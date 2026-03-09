@@ -1,7 +1,7 @@
 ---
 title: "9.2 API Testing and E2E Testing"
 description: "From rating endpoints to complete user flows—API testing in practice, Playwright E2E testing, flaky test troubleshooting, and reading test logs"
-chapter: "第九章"
+chapter: "Chapter 9"
 ---
 
 # 9.2 API Testing and E2E Testing

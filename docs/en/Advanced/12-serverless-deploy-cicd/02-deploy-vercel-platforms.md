@@ -54,16 +54,16 @@ Once deployment succeeds, you'll get a link like `xxx.vercel.app`.
 If you prefer the command line, you can use the Vercel CLI:
 
 ```bash
-# 安装 Vercel CLI
+# Install Vercel CLI
 npm i -g vercel
 
-# 登录（会打开浏览器授权）
+# Log in (will open browser for authorization)
 vercel login
 
-# 部署（首次会询问项目配置）
+# Deploy (will ask for project config on first run)
 vercel deploy
 
-# 部署到生产环境
+# Deploy to production
 vercel --prod
 ```
 

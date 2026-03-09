@@ -112,9 +112,9 @@ This tutorial repository uses the CI/CD capabilities of the CNB platform, and th
 
 **Deployment process (same as your project):**
 ```bash
-pnpm install --frozen-lockfile  # 安装依赖
-pnpm build                       # 构建站点
-edgeone pages deploy             # 部署到 EdgeOne Pages
+pnpm install --frozen-lockfile  # Install dependencies
+pnpm build                       # Build the site
+edgeone pages deploy             # Deploy to EdgeOne Pages
 ```
 
 **Environment variable management:**

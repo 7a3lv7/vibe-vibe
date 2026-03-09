@@ -1,7 +1,7 @@
 ---
 title: "9.3 Automated Workflows"
 description: "Git Hooks, GitHub Actions CI, and TDD basics—let the machine remember what needs checking every time"
-chapter: "第九章"
+chapter: "Chapter 9"
 ---
 
 # 9.3 Automated Workflows

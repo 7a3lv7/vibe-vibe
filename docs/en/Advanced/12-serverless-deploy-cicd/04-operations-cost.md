@@ -64,13 +64,13 @@ How to view logs on each platform:
 
 Serverless platforms do a lot by default, so you don't have to worry about them:
 
-**Auto scaling**——Like your phone's automatic brightness adjustment: it dims when the light is strong and brightens when it's dark, without you needing to move the slider manually. With traditional servers, you have to guess in advance, "How many servers does my website need?" Guess too low and it can't handle the traffic; guess too high and you're wasting money. Serverless platforms automatically adjust resources based on actual traffic, so you don't need to think about it at all.
+**Auto scaling**—Like your phone's automatic brightness adjustment: it dims when the light is strong and brightens when it's dark, without you needing to move the slider manually. With traditional servers, you have to guess in advance, "How many servers does my website need?" Guess too low and it can't handle the traffic; guess too high and you're wasting money. Serverless platforms automatically adjust resources based on actual traffic, so you don't need to think about it at all.
 
-**Global CDN**——Static assets (HTML, CSS, JS, images) are automatically distributed to global edge nodes. When users visit, the CDN returns content from the node closest to them instead of hitting the origin server every time.
+**Global CDN**—Static assets (HTML, CSS, JS, images) are automatically distributed to global edge nodes. When users visit, the CDN returns content from the node closest to them instead of hitting the origin server every time.
 
-**Image optimization**——Automatically compresses images and converts them to more efficient formats (WebP/AVIF). You might upload a 2MB PNG, but users may only download 200KB.
+**Image optimization**—Automatically compresses images and converts them to more efficient formats (WebP/AVIF). You might upload a 2MB PNG, but users may only download 200KB.
 
-**HTTPS**——Automatically applies for and renews SSL certificates. You don't need to configure HTTPS manually—the platform gives you secure connections by default.
+**HTTPS**—Automatically applies for and renews SSL certificates. You don't need to configure HTTPS manually—the platform gives you secure connections by default.
 
 On traditional servers, these optimizations would require you to configure Nginx, Let's Encrypt, CDN services, and more yourself... now the platform handles all of it.
 
@@ -82,13 +82,13 @@ When users say the site feels "slow," you can ask Claude Code to help check:
 
 Common optimization directions:
 
-**Images are too large**——The initial page load is slow. Use the `next/image` component, which automatically serves appropriately sized images based on the device dimensions.
+**Images are too large**—The initial page load is slow. Use the `next/image` component, which automatically serves appropriately sized images based on the device dimensions.
 
-**API is too slow**——The blank-screen time is too long. Check whether database queries are missing indexes or whether there is an N+1 query issue. Both were mentioned in the database section of Chapter 6.
+**API is too slow**—The blank-screen time is too long. Check whether database queries are missing indexes or whether there is an N+1 query issue. Both were mentioned in the database section of Chapter 6.
 
-**Bundle size is too large**——JS files are too big, so download times are long. Check whether you imported unnecessary libraries. Tell Claude Code: "Analyze my bundle size and find the largest dependencies."
+**Bundle size is too large**—JS files are too big, so download times are long. Check whether you imported unnecessary libraries. Tell Claude Code: "Analyze my bundle size and find the largest dependencies."
 
-**No caching**——The same data is requested repeatedly. Add appropriate caching strategies so browsers and the CDN can cache content that doesn't change often.
+**No caching**—The same data is requested repeatedly. Add appropriate caching strategies so browsers and the CDN can cache content that doesn't change often.
 
 ## Cost: is the free quota enough
 

@@ -15,8 +15,8 @@ Xiaoming decided to buy a proper domain for his website. He opened a search engi
 | Registrar | Advantages |
 |-------|------|
 | **Cloudflare** | At-cost renewals, free DNS and CDN |
-| **阿里云（万网）** | The largest provider in China, supports `.cn` domains |
-| **腾讯云（DNSPod）** | Part of the Tencent ecosystem, fast DNS resolution |
+| **Alibaba Cloud (Wanwang)** | The largest provider in China, supports `.cn` domains |
+| **Tencent Cloud (DNSPod)** | Part of the Tencent ecosystem, fast DNS resolution |
 | **Namecheap** | Low prices, free privacy protection |
 
 <!-- 📸 Screenshot placeholder: Cloudflare domain registration page, showing the domain search interface -->
@@ -94,7 +94,7 @@ The platform will tell you which DNS record to add, usually a CNAME record. (Som
 
 **Step 2: Add the DNS record in your domain registrar**
 
-Go to the DNS management page of your registrar (Cloudflare / 阿里云 / 腾讯云). The interface below shows an example of adding a record in 阿里云 DNS:
+Go to the DNS management page of your registrar (Cloudflare / Alibaba Cloud / Tencent Cloud). The interface below shows an example of adding a record in Alibaba Cloud DNS:
 
 - **Type**: CNAME
 - **Name**: `@` (represents the root domain) or `www`, or another custom prefix
@@ -148,7 +148,7 @@ If you don’t see the lock icon after binding the domain, wait 5-15 minutes and
 
 If you get stuck at any point in the process—for example, if you’re not sure what to enter for the CNAME value, or whether the DNS record has taken effect—just tell Claude Code what’s going on. It can help you check your DNS configuration, troubleshoot resolution issues, and confirm certificate status.
 
-This tutorial also includes an MCP configuration guide for 阿里云. Once configured, Claude Code can use MCP tools to interact directly with the 阿里云 DNS API and help you complete DNS setup.
+This tutorial also includes an MCP configuration guide for Alibaba Cloud. Once configured, Claude Code can use MCP tools to interact directly with the Alibaba Cloud DNS API and help you complete DNS setup.
 
 ## Frequently Asked Questions
 

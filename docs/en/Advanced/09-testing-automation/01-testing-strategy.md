@@ -1,7 +1,7 @@
 ---
 title: "9.1 Why We Need Tests"
 description: "Regression testing, the testing pyramid, when to automate—understanding the core value of testing through Xiaoming's rating feature"
-chapter: "第九章"
+chapter: "Chapter 9"
 ---
 
 # 9.1 Why We Need Tests
