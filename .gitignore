@@ -62,3 +62,6 @@ demos/*/node_modules/
 # ============================================
 **/AGENTS.md
 **/CLAUDE.md
+docs/.vitepress/dist
+docs/.vitepress/cache
+package-lock.json

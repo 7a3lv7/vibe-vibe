@@ -150,6 +150,9 @@ For installation and usage details, see **<https://skills.sh>**
 
 - 5.6 Turning Component Libraries into Skills (./06-component-skills.md) 🔥 NEW
     Transform your project’s component library into Skills that AI can understand, enabling design system constraints and consistency
+
+- 5.7 UI Best Practices (./07-ui-best-practices.md) 🔥 NEW
+    Define visual interaction rules to constrain AI, add and optimize library components, and verify designs through code
 ```
 
 ---

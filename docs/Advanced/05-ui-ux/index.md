@@ -150,6 +150,9 @@ title: "第五章：界面(UI)与交互(UX)"
 
 - 5.6 组件库 Skills 化 (./06-component-skills.md) 🔥 NEW
     将项目组件库转化为 AI 可理解的 Skills，实现设计系统约束和一致性
+
+- 5.7 UI 最佳实践 (./07-ui-best-practices.md) 🔥 NEW
+    制定视觉交互规则约束 AI、为组件库新增和优化组件、设计与代码的交互验证
 ```
 
 ---

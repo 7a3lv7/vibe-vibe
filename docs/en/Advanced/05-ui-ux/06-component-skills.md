@@ -288,5 +288,5 @@ Xiaoming nodded. He finally understood why large companies spend so much time bu
 :::
 
 ::: info Next Step
-You've mastered the core knowledge of UI/UX. Next, Chapter 6 will cover data persistence—how to make your application "remember" user data.
+Up next, Section 5.7 covers UI Best Practices—how to define visual interaction rules, add and optimize library components, and verify designs through code.
 :::
