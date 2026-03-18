@@ -12,4 +12,5 @@ title: "实践案例篇"
 - [零代码打造 AI 绘本生成器](./ai-picture-book-generator.md) —— 纯小白 2 周完成 AI 应用
 - [全栈实战：AI 简历优化 SaaS](./ai-resume-saas.md) —— Next.js + AI 的完整 SaaS 项目
 - [全栈开发：21天养成思考习惯的小游戏](./full-stack-21-day-thinking-habit-game.md) —— 从 idea 到上线，完整复盘「问题呕吐机」的构建过程
+- [A2A 五子棋实战：让 AI 和 AI 自己下棋](./a2a-gomoku-secondme.md) —— SecondMe API + API Key 无头访问 + 实时观战 + 全量对局记录
 - [我的 Vibe 编程经验分享](./vibe-coding-methodology.md) —— 从执行者到决策者的思维转变
