@@ -260,8 +260,8 @@ export default withMermaid(defineConfigWithTheme<DefaultTheme.Config>({
 
     // 移动端和 PWA 配置
     ['meta', { name: 'theme-color', content: '#ffffff' }],
-    ['meta', { name: 'mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    // 已移除 mobile-web-app-capable 和 apple-mobile-web-app-capable
+    // 以保留 Safari 阅读器模式 / 朗读功能
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'default' }],
     ['meta', { name: 'apple-mobile-web-app-title', content: SITE_TITLE }],
 
@@ -828,7 +828,7 @@ Allow: /security.txt
           description: SITE_DESCRIPTION,
           theme_color: '#ffffff',
           background_color: '#ffffff',
-          display: 'standalone',
+          display: 'minimal-ui',  // 改为 minimal-ui 以保留浏览器朗读功能
           start_url: '/',
           scope: '/',
           icons: [
